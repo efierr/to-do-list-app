@@ -8,31 +8,43 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>To Do App</h1>
-        <div>
-            <a href="#">To Do</a>
-            <a href="./about-me.html">About Me</a>
-        </div>
+    <header class="header">
+        <h1 class="header__heading">To Do App</h1>
+        <nav>
+
+            <div>
+                <a href="#" class="header__link">To Do</a>
+                <a href="./about-me.html" class="header__link">About Me</a>
+            </div>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>To-Do Form</h2>
-            <form>
+        <section class="to-dos">
+            <h2 class="to-dos__heading">To-Do Form</h2>
+            <form class="to-dos__form">
                 <!-- <label>
                     Add To Do
                     <input type="text" id="to-do" name="toDo" placeholder="Write your to do here.." required>
                 </label> -->
-                <label>
-                    Add To Do
-                    <input type="text" id="to-do" name="toDo" placeholder="Write your to do here.." required>
+                <label class="to-dos__label">
+                    Add To Do <br>
+                    <input type="text" id="to-do" name="toDo" placeholder="Write your to do here.."class="to-dos__input" required>
                 </label>
-                <input type="submit" value="Add" />
+                <input type="submit" value="Add"class = "to-do__submit-button
+                " />
                 <!-- <button type="submit">Add</button> -->
             </form>
         </section>
-        <section>
-
+        <section class="to-dos">
+            <h2 class="to-dos__heading">To Do List</h2>
+        <ul>
+            <li class="to-dos__list-item">Task 1 <button class="to-dos__delete-button
+                ">Delete</button></li>
+            <li class="to-dos__list-item">Task 2 <button class="to-dos__delete-button
+                ">Delete</button></li>
+            <li class="to-dos__list-item">Task 3 <button class="to-dos__delete-button
+                ">Delete</button></li>
+        </ul>
         </section>
     </main>
 
